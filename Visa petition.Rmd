@@ -1,0 +1,176 @@
+---
+title: "K–12 Cybersecurity and Data Privacy Research Analysis"
+output: html_notebook
+---
+This notebook provides an exploratory analysis of survey data related to technology training, educator technology confidence, and cybersecurity and data privacy preparedness in K–12 education. The analysis uses preliminary survey data to identify potential relationships among these factors and support the development of a practical K–12 Cyber Safety Framework. Because the current dataset is exploratory and limited in size, the findings are used to identify patterns and guide future research rather than establish causal or nationally representative conclusions.
+
+
+```{r}
+# Install packages once if needed
+install.packages(c("tidyverse", "ggplot2", "patchwork"))
+
+library(tidyverse)
+library(ggplot2)
+library(patchwork)
+install.packages(c("dplyr", "tidyr"))
+
+remove.packages("readxl")
+install.packages("readxl")
+library(readxl)
+library(dplyr)
+library(tidyr)
+```
+
+```{r}
+data <- read_excel("Training and Use of School Digital Devices  (1).xlsx")
+
+# View the dataset
+View(data)
+
+# See the column names
+names(data)
+
+# See the structure of the dataset
+str(data)
+```
+
+```{r}
+names(survey_data)
+```
+```{r}
+# Number of respondents
+nrow(data)
+
+# Number of variables
+ncol(data)
+
+# Summary of the dataset
+summary(data)
+
+# Check for missing responses
+colSums(is.na(data))
+```
+
+```{r}
+# Frequency tables for every variable
+lapply(data, table, useNA = "ifany")
+```
+
+```{r}
+library(ggplot2)
+library(dplyr)
+
+
+ggplot(data, aes(x = `Last Training`)) +
+  geom_bar() +
+  labs(
+    title = "When Teachers Last Received Technology Training",
+    x = "Time Since Last Training",
+    y = "Number of Respondents"
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+
+```{r}
+ggplot(data, aes(x = `Preparedness`)) +
+  geom_bar() +
+  labs(
+    title = "Teacher Preparedness After Technology Training",
+    x = "Preparedness Level",
+    y = "Number of Respondents"
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+```{r}
+ggplot(data, aes(x = `Cybersecurity Training`)) +
+  geom_bar() +
+  labs(
+    title = "Cybersecurity and Student Data Protection Training",
+    x = "Cybersecurity Training Received",
+    y = "Number of Respondents"
+  ) +
+  theme_minimal()
+```
+```{r}
+ggplot(data, aes(x = `Troubleshooting Confidence`)) +
+  geom_bar() +
+  labs(
+    title = "Teacher Confidence in Troubleshooting Technology",
+    x = "Confidence Level",
+    y = "Number of Respondents"
+  ) +
+  theme_minimal()
+
+```
+```{r}
+cybersecurity_training_frequency <- data %>%
+  count(`Training Frequency`, `Cybersecurity Training`) %>%
+  group_by(`Training Frequency`) %>%
+  mutate(
+    Percentage = round(n / sum(n) * 100, 1)
+  ) %>%
+  ungroup()
+
+cybersecurity_training_frequency
+```
+```{r}
+training_summary <- data %>%
+  count(`Training Frequency`) %>%
+  mutate(
+    Percentage = round(n / sum(n) * 100, 1)
+  )
+
+preparedness_summary <- data %>%
+  count(`Preparedness`) %>%
+  mutate(
+    Percentage = round(n / sum(n) * 100, 1)
+  )
+
+confidence_summary <- data %>%
+  count(`Troubleshooting Confidence`) %>%
+  mutate(
+    Percentage = round(n / sum(n) * 100, 1)
+  )
+
+training_summary
+preparedness_summary
+cybersecurity_summary
+confidence_summary
+```
+```{r}
+summary(data)
+```
+```{r}
+cat("TRAINING FREQUENCY\n")
+print(table(data$`Training Frequency`))
+
+cat("\nLAST TRAINING\n")
+print(table(data$`Last Training`))
+
+cat("\nPREPAREDNESS\n")
+print(table(data$`Preparedness`))
+
+cat("\nCYBERSECURITY TRAINING\n")
+print(table(data$`Cybersecurity Training`))
+
+cat("\nTROUBLESHOOTING CONFIDENCE\n")
+print(table(data$`Troubleshooting Confidence`))
+```
+```{r}
+ggplot(data, aes(
+  x = `Training Frequency`,
+  fill = `Preparedness`
+)) +
+  geom_bar(position = "dodge") +
+  labs(
+    title = "Relationship Between Training Frequency and Preparedness",
+    subtitle = "More frequent training is associated with higher reported preparedness",
+    x = "Training Frequency",
+    y = "Number of Respondents",
+    fill = "Preparedness"
+  ) +
+  theme_minimal()
+```
