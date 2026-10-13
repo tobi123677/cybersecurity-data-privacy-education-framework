@@ -26,7 +26,7 @@ I subsequently developed a working web prototype using Bubble. The application i
 https://tech-check-96322.bubbleapps.io/version-test
 
 **Figma Prototype:**  
-[INSERT YOUR FIGMA LINK]
+[[INSERT YOUR FIGMA LINK]](https://www.figma.com/design/0iOIl5Lv8jnIntWxlQD8v9/Tech-Check?node-id=0-1&t=E5IKlK3dfrk40A7k-1)
 
 ## Current Development Status
 
