@@ -1,92 +1,158 @@
+
 ---
 title: "K–12 Cybersecurity and Data Privacy Research Analysis"
 output: html_notebook
 ---
-This notebook provides an exploratory analysis of survey data related to technology training, educator technology confidence, and cybersecurity and data privacy preparedness in K–12 education. The analysis uses preliminary survey data to identify potential relationships among these factors and support the development of a practical K–12 Cyber Safety Framework. Because the current dataset is exploratory and limited in size, the findings are used to identify patterns and guide future research rather than establish causal or nationally representative conclusions.
 
+## Project Overview
 
-```{r}
-# Install packages once if needed
-install.packages(c("tidyverse", "ggplot2", "patchwork"))
+This notebook provides an exploratory analysis of survey data related to technology training, educator technology confidence, and cybersecurity and data privacy preparedness in K–12 education.
 
-library(tidyverse)
-library(ggplot2)
-library(patchwork)
-install.packages(c("dplyr", "tidyr"))
+The analysis uses preliminary survey data to identify potential relationships among these factors and support the development of a practical K–12 Cyber Safety Framework.
 
-remove.packages("readxl")
-install.packages("readxl")
+Because the dataset is exploratory and limited in size, the findings are used to identify patterns and guide future research rather than establish causal or nationally representative conclusions.
+
+## 1. Load Required Packages
+
+Install the following packages once in your R console if they are not already installed:
+
+`install.packages(c("readxl", "dplyr", "ggplot2"))`
+
+```{r setup, message=FALSE, warning=FALSE}
 library(readxl)
 library(dplyr)
-library(tidyr)
+library(ggplot2)
 ```
 
-```{r}
-data <- read_excel("Training and Use of School Digital Devices  (1).xlsx")
+## 2. Import Survey Data
 
-# View the dataset
-View(data)
+The spreadsheet should be saved in the same folder as this R Markdown notebook.
 
-# See the column names
+```{r import-data}
+data <- read_excel(
+  "Educator-Technology-and-Training-Survey.xlsx"
+)
+
+# Display the first six rows
+head(data)
+
+# Display column names
 names(data)
 
-# See the structure of the dataset
+# Examine the dataset structure
 str(data)
 ```
 
-```{r}
-names(survey_data)
+## 3. Validate Required Columns
+
+```{r validate-columns}
+required_columns <- c(
+  "Last Training",
+  "Preparedness",
+  "Cybersecurity Training",
+  "Troubleshooting Confidence",
+  "Training Frequency"
+)
+
+missing_columns <- setdiff(
+  required_columns,
+  names(data)
+)
+
+if (length(missing_columns) > 0) {
+  stop(
+    "The spreadsheet is missing these columns: ",
+    paste(missing_columns, collapse = ", ")
+  )
+}
+
+cat("All required survey columns are available.\n")
 ```
-```{r}
+
+## 4. Explore the Dataset
+
+```{r dataset-overview}
 # Number of respondents
 nrow(data)
 
 # Number of variables
 ncol(data)
 
-# Summary of the dataset
+# Summary statistics
 summary(data)
 
-# Check for missing responses
+# Missing responses by column
 colSums(is.na(data))
 ```
 
-```{r}
-# Frequency tables for every variable
-lapply(data, table, useNA = "ifany")
+## 5. Frequency Tables
+
+```{r frequency-tables}
+lapply(
+  data,
+  table,
+  useNA = "ifany"
+)
 ```
 
-```{r}
-library(ggplot2)
-library(dplyr)
+## 6. Technology Training History
 
+This chart shows when respondents last received technology training.
 
-ggplot(data, aes(x = `Last Training`)) +
-  geom_bar() +
+```{r last-training-chart}
+ggplot(
+  data,
+  aes(x = `Last Training`)
+) +
+  geom_bar(fill = "steelblue") +
   labs(
     title = "When Teachers Last Received Technology Training",
     x = "Time Since Last Training",
     y = "Number of Respondents"
   ) +
   theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  theme(
+    axis.text.x = element_text(
+      angle = 45,
+      hjust = 1
+    )
+  )
 ```
 
+## 7. Teacher Preparedness
 
-```{r}
-ggplot(data, aes(x = `Preparedness`)) +
-  geom_bar() +
+This chart illustrates how prepared educators reported feeling after technology training.
+
+```{r preparedness-chart}
+ggplot(
+  data,
+  aes(x = `Preparedness`)
+) +
+  geom_bar(fill = "darkgreen") +
   labs(
     title = "Teacher Preparedness After Technology Training",
     x = "Preparedness Level",
     y = "Number of Respondents"
   ) +
   theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  theme(
+    axis.text.x = element_text(
+      angle = 45,
+      hjust = 1
+    )
+  )
 ```
-```{r}
-ggplot(data, aes(x = `Cybersecurity Training`)) +
-  geom_bar() +
+
+## 8. Cybersecurity and Student Data Protection Training
+
+This chart summarizes reported cybersecurity training.
+
+```{r cybersecurity-training-chart}
+ggplot(
+  data,
+  aes(x = `Cybersecurity Training`)
+) +
+  geom_bar(fill = "darkorange") +
   labs(
     title = "Cybersecurity and Student Data Protection Training",
     x = "Cybersecurity Training Received",
@@ -94,29 +160,58 @@ ggplot(data, aes(x = `Cybersecurity Training`)) +
   ) +
   theme_minimal()
 ```
-```{r}
-ggplot(data, aes(x = `Troubleshooting Confidence`)) +
-  geom_bar() +
+
+## 9. Troubleshooting Confidence
+
+This chart explores educators' reported confidence in troubleshooting technology.
+
+```{r troubleshooting-chart}
+ggplot(
+  data,
+  aes(x = `Troubleshooting Confidence`)
+) +
+  geom_bar(fill = "purple") +
   labs(
     title = "Teacher Confidence in Troubleshooting Technology",
     x = "Confidence Level",
     y = "Number of Respondents"
   ) +
-  theme_minimal()
-
+  theme_minimal() +
+  theme(
+    axis.text.x = element_text(
+      angle = 45,
+      hjust = 1
+    )
+  )
 ```
-```{r}
+
+## 10. Cybersecurity Training by Training Frequency
+
+This table examines cybersecurity training responses across reported training-frequency categories.
+
+```{r cybersecurity-by-frequency}
 cybersecurity_training_frequency <- data %>%
-  count(`Training Frequency`, `Cybersecurity Training`) %>%
+  count(
+    `Training Frequency`,
+    `Cybersecurity Training`
+  ) %>%
   group_by(`Training Frequency`) %>%
   mutate(
-    Percentage = round(n / sum(n) * 100, 1)
+    Percentage = round(
+      n / sum(n) * 100,
+      1
+    )
   ) %>%
   ungroup()
 
 cybersecurity_training_frequency
 ```
-```{r}
+
+## 11. Survey Response Summaries
+
+These tables show response counts and percentages for selected survey questions.
+
+```{r survey-summaries}
 training_summary <- data %>%
   count(`Training Frequency`) %>%
   mutate(
@@ -125,6 +220,12 @@ training_summary <- data %>%
 
 preparedness_summary <- data %>%
   count(`Preparedness`) %>%
+  mutate(
+    Percentage = round(n / sum(n) * 100, 1)
+  )
+
+cybersecurity_summary <- data %>%
+  count(`Cybersecurity Training`) %>%
   mutate(
     Percentage = round(n / sum(n) * 100, 1)
   )
@@ -140,37 +241,89 @@ preparedness_summary
 cybersecurity_summary
 confidence_summary
 ```
-```{r}
-summary(data)
-```
-```{r}
+
+## 12. Detailed Frequency Counts
+
+```{r detailed-frequency-counts}
 cat("TRAINING FREQUENCY\n")
-print(table(data$`Training Frequency`))
+print(table(
+  data$`Training Frequency`,
+  useNA = "ifany"
+))
 
 cat("\nLAST TRAINING\n")
-print(table(data$`Last Training`))
+print(table(
+  data$`Last Training`,
+  useNA = "ifany"
+))
 
 cat("\nPREPAREDNESS\n")
-print(table(data$`Preparedness`))
+print(table(
+  data$`Preparedness`,
+  useNA = "ifany"
+))
 
 cat("\nCYBERSECURITY TRAINING\n")
-print(table(data$`Cybersecurity Training`))
+print(table(
+  data$`Cybersecurity Training`,
+  useNA = "ifany"
+))
 
 cat("\nTROUBLESHOOTING CONFIDENCE\n")
-print(table(data$`Troubleshooting Confidence`))
+print(table(
+  data$`Troubleshooting Confidence`,
+  useNA = "ifany"
+))
 ```
-```{r}
-ggplot(data, aes(
-  x = `Training Frequency`,
-  fill = `Preparedness`
-)) +
+
+## 13. Training Frequency and Preparedness
+
+This chart compares reported training frequency with educator preparedness.
+
+It is intended for exploratory analysis and does not establish causation.
+
+```{r training-preparedness-chart}
+ggplot(
+  data,
+  aes(
+    x = `Training Frequency`,
+    fill = `Preparedness`
+  )
+) +
   geom_bar(position = "dodge") +
   labs(
     title = "Relationship Between Training Frequency and Preparedness",
-    subtitle = "More frequent training is associated with higher reported preparedness",
+    subtitle = "Exploratory comparison of training frequency and reported preparedness",
     x = "Training Frequency",
     y = "Number of Respondents",
     fill = "Preparedness"
   ) +
-  theme_minimal()
+  theme_minimal() +
+  theme(
+    axis.text.x = element_text(
+      angle = 45,
+      hjust = 1
+    )
+  )
 ```
+
+## 14. Research Limitations
+
+This analysis uses preliminary survey responses from a limited group of educators.
+
+The findings should be interpreted cautiously because:
+
+- The sample may not represent the broader K–12 educator population.
+- Responses are self-reported.
+- Survey results may be influenced by differences in respondents' roles, experience, and school environments.
+- Descriptive comparisons cannot establish causal relationships.
+
+The findings are intended to inform framework development and identify questions for further research.
+
+## 15. Connection to the K–12 Cyber Safety Framework
+
+The exploratory analysis supports the development of a K–12 Cyber Safety Framework by examining educators' reported training experiences, preparedness, cybersecurity training exposure, and technology confidence.
+
+These findings can help identify areas for further investigation and guide the development of practical cybersecurity education resources.
+
+Future work will include refining the framework, improving the Tech Check assessment prototype, and evaluating the usefulness of cybersecurity-readiness indicators.
