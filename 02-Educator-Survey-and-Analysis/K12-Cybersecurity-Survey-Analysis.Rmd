@@ -30,7 +30,7 @@ The spreadsheet should be saved in the same folder as this R Markdown notebook.
 
 ```{r import-data}
 data <- read_excel(
-  "Educator-Technology-and-Training-Survey.xlsx"
+  "Educator-Technology-and-Training-Survey.pdf"
 )
 
 # Display the first six rows
