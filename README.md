@@ -72,7 +72,7 @@ The prototype remains under development and requires further testing and validat
 
 5. Cybersecurity Readiness Dashboard
 
-View Readiness Dashboard
+[View Readiness Dashboard](https://github.com/tobi123677/cybersecurity-data-privacy-education-framework/tree/main/05-Readiness-Dashboard)
 
 The dashboard demonstrates how cybersecurity-readiness indicators and educator training information could be visualized to support educational planning.
 
@@ -90,7 +90,7 @@ These findings are based on self-reported survey responses and are exploratory. 
 
 6. Development Roadmap
 
-View Development Roadmap
+[View Development Roadmap](https://github.com/tobi123677/cybersecurity-data-privacy-education-framework/tree/main/06-Development-Roadmap)
 
 The roadmap outlines completed research and prototype work, ongoing development activities, and proposed future milestones.
 
@@ -98,7 +98,7 @@ Planned activities include further assessment development, usability testing, ed
 
 7. Supporting Documents
 
-View Supporting Documents Overview
+[View Supporting Documents Overview](https://github.com/tobi123677/cybersecurity-data-privacy-education-framework/tree/main/07-Supporting-Documents)
 
 This section summarizes categories of academic qualifications, professional credentials, employment experience, and other background evidence relevant to the initiative.
 
