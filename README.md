@@ -70,6 +70,36 @@ https://www.figma.com/design/0iOIl5Lv8jnIntWxlQD8v9/Tech-Check
 
 The prototype remains under development and requires further testing and validation.
 
-### 5. Cybersecurity Readiness Dashboard
+5. Cybersecurity Readiness Dashboard
 
-[View Readiness Dashboard](https://github.com/tobi123677
+View Readiness Dashboard
+
+The dashboard demonstrates how cybersecurity-readiness indicators and educator training information could be visualized to support educational planning.
+
+The dashboard presents descriptive findings from a preliminary survey of 30 educators who provided actual responses about their technology training experiences, cybersecurity training exposure, and perceived preparedness.
+
+The dashboard highlights several findings:
+
+60% of respondents reported not receiving cybersecurity training.
+
+53.3% reported feeling slightly unprepared or not prepared at all.
+
+36.7% reported never receiving technology training.
+
+These findings are based on self-reported survey responses and are exploratory. They are not nationally representative and do not establish school-wide cybersecurity readiness or validated assessment outcomes.
+
+6. Development Roadmap
+
+View Development Roadmap
+
+The roadmap outlines completed research and prototype work, ongoing development activities, and proposed future milestones.
+
+Planned activities include further assessment development, usability testing, educator feedback, and potential pilot evaluation, subject to appropriate collaboration and permissions.
+
+7. Supporting Documents
+
+View Supporting Documents Overview
+
+This section summarizes categories of academic qualifications, professional credentials, employment experience, and other background evidence relevant to the initiative.
+
+Sensitive supporting records, including academic transcripts, employment documentation, personal identification information, and immigration-related materials, are maintained privately and are not published in the public GitHub repository.
