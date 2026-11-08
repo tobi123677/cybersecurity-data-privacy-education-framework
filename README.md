@@ -30,13 +30,13 @@ The framework aims to:
 
 ### 1. K–12 Cyber Safety Framework
 
-[View Cyber Safety Framework](01-Cyber-Safety-Framework/)
+[View Cyber Safety Framework](https://github.com/tobi123677/cybersecurity-data-privacy-education-framework/tree/main/01-Cyber-Safety-Framework)
 
 This section documents the initial structure of the proposed framework, including cybersecurity awareness and data privacy topics relevant to K–12 educational environments.
 
 ### 2. Educator Survey and Analysis
 
-[View Educator Survey and Analysis](02-Educator-Survey-and-Analysis/)
+[View Educator Survey and Analysis](https://github.com/tobi123677/cybersecurity-data-privacy-education-framework/tree/main/02-Educator-Survey-and-Analysis)
 
 A preliminary educator survey was distributed to 50 educators, with 30 responses received, representing a 60% response rate.
 
@@ -46,7 +46,7 @@ Exploratory analysis is documented using R Markdown. The findings are preliminar
 
 ### 3. Cyber Safety Checklist
 
-[View Cyber Safety Checklist](03-Cyber-Safety-Checklist/)
+[View Cyber Safety Checklist](https://github.com/tobi123677/cybersecurity-data-privacy-education-framework/tree/main/03-Cyber-Safety-Checklist)
 
 This section documents the development of a practical cybersecurity and data privacy checklist intended to help educators and school personnel review everyday digital safety practices and identify potential training needs.
 
@@ -54,40 +54,22 @@ The checklist is being developed as an educational self-assessment resource rath
 
 ### 4. Tech Check: Adaptive Cybersecurity Assessment
 
-[View Tech Check Project](04-Tech-Check-Adaptive-Assessment/)
+[View Tech Check Project](https://github.com/tobi123677/cybersecurity-data-privacy-education-framework/tree/main/04-Tech-Check-Adaptive-Assessment)
 
 **Tech Check** is a working web-based prototype designed to explore interactive cybersecurity-readiness assessments for students and educators.
 
 The prototype includes separate assessment pathways and adaptive question-routing concepts. Initial interface designs were created using Figma, followed by web prototype development using Bubble.
 
-**Working Web Prototype:**  
+**Working Web Prototype:**
+
 https://tech-check-96322.bubbleapps.io/version-test
 
-**Figma Designs:**  
-https://www.figma.com/design/0iOIl5Lv8jnIntWxlQD8v9/Tech-Check?node-id=0-1&t=E5IKlK3dfrk40A7k-1
+**Figma Designs:**
+
+https://www.figma.com/design/0iOIl5Lv8jnIntWxlQD8v9/Tech-Check
 
 The prototype remains under development and requires further testing and validation.
 
 ### 5. Cybersecurity Readiness Dashboard
 
-[View Readiness Dashboard](05-Readiness-Dashboard/)
-
-The dashboard demonstrates how cybersecurity-readiness indicators and assessment-related information could potentially be visualized to support educational planning.
-
-**The dashboard uses synthetic demonstration data.** Its displayed values are illustrative and do not represent actual school-wide cybersecurity readiness or validated assessment outcomes.
-
-### 6. Development Roadmap
-
-[View Development Roadmap](06-Development-Roadmap/)
-
-The roadmap outlines completed research and prototype work, ongoing development activities, and proposed future milestones.
-
-Planned activities include further assessment development, usability testing, educator feedback, and potential pilot evaluation, subject to appropriate collaboration and permissions.
-
-### 7. Supporting Documents
-
-[View Supporting Documents Overview](07-Supporting-Documents/)
-
-This section summarizes categories of academic qualifications, professional credentials, employment experience, and other background evidence relevant to the initiative.
-
-Sensitive supporting records,
+[View Readiness Dashboard](https://github.com/tobi123677
