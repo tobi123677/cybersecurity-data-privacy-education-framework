@@ -14,9 +14,10 @@ The prototype includes or explores the following capabilities:
 
 - **Role-Specific Assessment Pathways:** Separate assessment experiences for students and educators/staff.
 - **Scenario-Based Questions:** Cybersecurity questions focused on common digital safety situations.
-- **Adaptive Question Difficulty:** Question pathways designed to adjust difficulty based on user responses, with correct answers leading to more challenging questions and incorrect answers leading to easier questions.
+- **Adaptive Question Difficulty (In Development):** Planned question-routing logic intended to adjust difficulty based on user responses, with correct answers leading toward more challenging questions and incorrect answers leading toward foundational questions.
 - **Readiness Feedback:** A developing approach to communicating assessment performance and potential learning needs.
 - **Dashboard Visualization:** A demonstration interface illustrating how cybersecurity-readiness information could be presented.
+- - **Personalized Learning Support (Planned):** Future functionality intended to connect identified knowledge gaps with short instructional videos, step-by-step guides, searchable frequently asked questions, and resources users can save for later reference.
 
 ## Design and Development
 
@@ -76,6 +77,11 @@ Future development priorities include:
 - Improving accessibility and usability across devices.
 - Expanding the Figma designs to cover additional assessment screens.
 - Gathering educator feedback and exploring opportunities for future pilot testing.
+- Developing personalized learning recommendations based on identified knowledge gaps.
+- Creating short instructional videos, searchable FAQs, and practical guides that users can save and revisit.
+- Exploring content tailored to different grade levels, educational roles, and technology experience.
+- Evaluating accessibility features for learners with diverse educational needs, including students with disabilities.
+- Exploring responsible artificial intelligence education and broader digital literacy topics, with potential future adaptation for higher education.
 
 ## Connection to the K–12 Cyber Safety Framework
 
@@ -83,4 +89,4 @@ Tech Check serves as a practical prototype within the proposed K–12 Cybersecur
 
 While the broader framework focuses on cybersecurity awareness, training, and readiness practices, Tech Check explores how interactive assessments could help identify knowledge gaps and guide targeted educational support.
 
-Together with the educator survey, cyber safety checklist, and readiness dashboard concept, the prototype demonstrates a potential approach to integrating cybersecurity education with assessment and data-informed improvement planning.
+Together with the educator survey, K–12 Cyber Safety Checklist, and Cybersecurity Readiness Dashboard developed using actual responses from 30 educators, Tech Check demonstrates an early-stage approach to integrating cybersecurity education, interactive assessment, and data-informed improvement planning. The survey-based dashboard and Tech Check's synthetic demonstration dashboard are separate components and should not be interpreted as representing the same assessment data.
