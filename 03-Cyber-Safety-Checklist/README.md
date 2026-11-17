@@ -29,7 +29,7 @@ The checklist is intended to address topics such as:
 7. Reporting suspicious activity and cybersecurity incidents
 8. Cybersecurity awareness and ongoing training
 
-These areas provide an initial structure for developing practical cybersecurity guidance appropriate for K–12 educational settings.
+These checklist topics are practical implementation areas derived from the broader K–12 Cyber Safety Framework. Although both contain eight areas, the checklist topics are not intended to correspond one-to-one with the framework's eight overarching domains.
 
 ## Intended Use
 
@@ -46,12 +46,12 @@ The checklist complements other components of the K–12 Cybersecurity and Data 
 - The educator survey and exploratory analysis
 - The proposed K–12 Cyber Safety Framework
 - The Tech Check adaptive assessment prototype
-- The cybersecurity-readiness dashboard concept
+- The Cybersecurity Readiness Dashboard developed using preliminary survey responses
 
 Together, these components are intended to support a structured approach to cybersecurity awareness, training, and readiness assessment in K–12 education.
 
 ## Development Status
 
-The checklist is part of an ongoing framework development initiative. Its proposed content and structure may be refined through additional research, educator feedback, and future pilot testing.
+An initial version of the K–12 Cyber Safety Checklist has been developed as part of the broader cybersecurity education framework. Its content and structure may be refined through additional research, educator feedback, and future pilot testing.
 
-The checklist has not yet been presented as an independently validated assessment instrument or a formally adopted school cybersecurity standard.
+The checklist has not yet been independently validated or formally adopted as a school cybersecurity standard.
