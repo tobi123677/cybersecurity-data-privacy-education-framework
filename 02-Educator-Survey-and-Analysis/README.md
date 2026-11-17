@@ -35,4 +35,4 @@ R Markdown notebook containing the exploratory survey analysis, including data s
 
 **Educator-Technology-and-Training-Survey.xlsx**
 
-Spreadsheet containing the survey dataset used for the analysis. Any publicly shared responses should be
+Spreadsheet containing the survey dataset used for the analysis. The spreadsheet contains the survey responses collected from educators. Any publicly shared version of the dataset should exclude personally identifiable information and other sensitive details to protect respondent privacy.
