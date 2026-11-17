@@ -33,8 +33,9 @@ Activities include:
 - Developing a working Tech Check web prototype using Bubble.
 - Exploring separate student and educator assessment pathways.
 - Implementing and refining adaptive question-routing concepts.
-- Developing the structure of a practical Cyber Safety Checklist.
-- Creating a demonstration cybersecurity-readiness dashboard using synthetic data.
+- Developing an initial Cyber Safety Checklist, with further refinement planned.
+- Developing a Cybersecurity Readiness Dashboard using survey responses.
+- Creating a separate Tech Check prototype dashboard interface using synthetic demonstration data to illustrate potential assessment results.
 
 These resources remain under development and require additional testing before operational use.
 
@@ -76,6 +77,10 @@ Potential future activities include:
 - Exploring scalable approaches to educator and student cybersecurity awareness.
 - Improving readiness reporting and assessment accessibility.
 - Investigating opportunities for broader educational collaboration and implementation.
+- Developing personalized, time-efficient learning resources, including short instructional videos, step-by-step guides, and searchable FAQs.
+- Exploring assessment and learning pathways tailored to different grade levels, educational roles, and levels of technology knowledge.
+- Evaluating accessibility features for learners with diverse educational needs, including students with disabilities.
+- Exploring broader digital literacy and responsible artificial intelligence education topics, with potential future adaptation for higher education.
 
 These activities represent proposed future directions rather than completed outcomes or guaranteed partnerships.
 
@@ -87,7 +92,8 @@ The repository documents the following existing work:
 - Initial K–12 Cyber Safety Framework documentation.
 - Cyber Safety Checklist development documentation.
 - Tech Check Figma interface designs and Bubble web prototype.
-- Demonstration cybersecurity-readiness dashboard.
+- Cybersecurity Readiness Dashboard presenting preliminary findings.
+- Tech Check prototype dashboard illustrating potential assessment results using synthetic demonstration data.
 
 ## Development and Evaluation Principles
 
