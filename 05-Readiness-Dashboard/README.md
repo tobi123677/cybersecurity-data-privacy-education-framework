@@ -2,19 +2,20 @@
 
 ## Project Overview
 
-The K–12 Cybersecurity Readiness Dashboard is a demonstration component of the broader **K–12 Cybersecurity and Data Privacy Education Framework**.
+The K–12 Cybersecurity Readiness Dashboard is an analytical and visualization component of the broader **K–12 Cybersecurity and Data Privacy Education Framework**.
 
-The dashboard concept explores how cybersecurity awareness, assessment performance, and training-related information could be organized and visualized to support educational planning and improvement.
+The dashboard uses actual, self-reported survey responses from 30 educators to present preliminary findings related to cybersecurity training, technology preparedness, training frequency, and troubleshooting confidence.
 
 Its intended audience includes K–12 educators, school administrators, and personnel responsible for technology training and digital safety.
+
+The dashboard is exploratory and does not represent a validated cybersecurity-readiness assessment or institutional cybersecurity performance measurement.
 
 ## Purpose and Objectives
 
 The dashboard is intended to:
 
-- Present cybersecurity-readiness information in an accessible visual format.
-- Help educators and administrators identify potential cybersecurity knowledge gaps.
-- Support discussions about training priorities and professional development.
-- Demonstrate how assessment information could inform future educational planning.
-- Complement the Tech Check adaptive cybersecurity assessment prototype.
-
+- Present preliminary cybersecurity training and technology-readiness survey findings in an accessible visual format.
+- Help educators and administrators identify potential training needs and areas requiring additional support.
+- Support discussions about cybersecurity awareness, professional development, and technology preparedness.
+- Demonstrate how survey analysis and visualization could inform future educational planning.
+- Complement the Tech Check adaptive cybersecurity assessment prototype as a separate analytical component.
