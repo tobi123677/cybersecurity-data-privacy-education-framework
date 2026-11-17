@@ -58,7 +58,9 @@ The checklist is being developed as an educational self-assessment resource rath
 
 **Tech Check** is a working web-based prototype designed to explore interactive cybersecurity-readiness assessments for students and educators.
 
-The prototype includes separate assessment pathways and adaptive question-routing concepts. Initial interface designs were created using Figma, followed by web prototype development using Bubble.
+The prototype includes separate assessment pathways and adaptive question-routing concepts. Initial interface designs were created using Figma, followed by web prototype development using Bubble. 
+
+The longer-term vision for Tech Check extends beyond cybersecurity assessment to include personalized, time-efficient learning support. Planned features include short instructional videos, step-by-step tutorials, searchable FAQs, and resources that users can save and revisit. Future development may also explore broader digital literacy, responsible artificial intelligence education, and accessibility features tailored to different educational needs.
 
 **Working Web Prototype:**
 
@@ -70,13 +72,13 @@ https://www.figma.com/design/0iOIl5Lv8jnIntWxlQD8v9/Tech-Check
 
 The prototype remains under development and requires further testing and validation.
 
-5. Cybersecurity Readiness Dashboard
+### 5. Cybersecurity Readiness Dashboard
 
 [View Readiness Dashboard](https://github.com/tobi123677/cybersecurity-data-privacy-education-framework/tree/main/05-Readiness-Dashboard)
 
 The dashboard demonstrates how cybersecurity-readiness indicators and educator training information could be visualized to support educational planning.
 
-The dashboard presents descriptive findings from a preliminary survey of 30 educators who provided actual responses about their technology training experiences, cybersecurity training exposure, and perceived preparedness.
+The dashboard presents descriptive findings from a preliminary survey of 30 educators who provided responses about their technology training experiences, cybersecurity training exposure, and perceived preparedness.
 
 The dashboard highlights several findings:
 
@@ -86,9 +88,11 @@ The dashboard highlights several findings:
 
 36.7% reported never receiving technology training.
 
-These findings are based on self-reported survey responses and are exploratory. They are not nationally representative and do not establish school-wide cybersecurity readiness or validated assessment outcomes.
+These findings are based on survey responses and are exploratory. They are not nationally representative and do not establish school-wide cybersecurity readiness or validated assessment outcomes.
 
-6. Development Roadmap
+This survey-based dashboard is separate from the Tech Check prototype's demonstration dashboard, which uses synthetic data to illustrate potential assessment visualizations.
+
+### 6. Development Roadmap
 
 [View Development Roadmap](https://github.com/tobi123677/cybersecurity-data-privacy-education-framework/tree/main/06-Development-Roadmap)
 
@@ -96,7 +100,7 @@ The roadmap outlines completed research and prototype work, ongoing development 
 
 Planned activities include further assessment development, usability testing, educator feedback, and potential pilot evaluation, subject to appropriate collaboration and permissions.
 
-7. Supporting Documents
+### 7. Supporting Documents
 
 [View Supporting Documents Overview](https://github.com/tobi123677/cybersecurity-data-privacy-education-framework/tree/main/07-Supporting-Documents)
 
