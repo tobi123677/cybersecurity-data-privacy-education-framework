@@ -4,7 +4,7 @@
 
 **Tech Check** is a web-based cybersecurity-readiness assessment prototype developed as part of the broader **K–12 Cybersecurity and Data Privacy Education Framework**.
 
-The application is designed to help students and educators assess their understanding of everyday cybersecurity practices, recognize potential knowledge gaps, and explore opportunities for targeted cybersecurity education.
+The application is designed to help students, educators, and school personnel assess their understanding of everyday cybersecurity and technology practices, identify potential knowledge gaps, and eventually access targeted, time-efficient educational resources. Its longer-term objective is to support users in developing practical digital skills through personalized guidance, short instructional videos, step-by-step tutorials, and accessible learning materials that can be revisited as needed.
 
 Tech Check demonstrates how interactive assessments could contribute to a more structured approach to cybersecurity awareness and readiness evaluation in K–12 educational settings.
 
